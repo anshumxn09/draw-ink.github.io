@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+#canvas{
+    box-shadow: 3px 3px 10px gray; 
+    /* Horizontal Vertical Blur Color */
+    background-color:seashell;
+    width: 100vw;
+    height: 85vh;
+    /* border: 4px inset navy; */
+    border: 6px groove navy;
+}
+
+.drawingBox{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(seashell , navy);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.penselector{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#rangeval{
+    padding: 5px;
+    margin-bottom: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+#range{
+    width: 220px;
+}
+
+input[type=range]{
+    background-color: azure;
+}
+#clear{
+    width: 50px;
+    height: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:white;
+    border: 2px solid navy;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+
+#clear:hover{
+    background-color: unset;
+    border: 2px solid red;
+}
+
+.penselector input[type="range"]::-moz-progress-bar{
+    background: black;
+}
